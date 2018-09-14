@@ -10,7 +10,10 @@ public class Vecka37 {
 		int max = 999999999;
         int min = -99999999;
 	     int medel = 0; 
-        
+       
+	     
+      
+	     
         // läs in tal 1...
         int tal1 = input.nextInt();
        
@@ -40,6 +43,11 @@ public class Vecka37 {
         
      // läs in tal 10...
         int tal10 = input.nextInt();
+        
+        int summa = tal1 + tal2 + tal3 + tal4 + tal5 + tal6 + tal7 + tal8 + tal9 + tal10;
+        
+        dubble medel1 = summa / 5; // 5 
+        dubble medel2 = summa / 5.0; //5,6
         
         System.out.println("Minsta: " + min);
         System.out.println("Största: " + max);
