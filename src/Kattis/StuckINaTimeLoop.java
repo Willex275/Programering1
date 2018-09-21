@@ -9,7 +9,7 @@ public class StuckINaTimeLoop {
 		
 		int i = input.nextInt();
 		for (int j = 1; j <= i; j++) {
-			System.out.println(j + "Abracadabra");
+			System.out.println(j + " Abracadabra");
 		}
 		
 	}
