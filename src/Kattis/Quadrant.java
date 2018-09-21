@@ -6,7 +6,7 @@ public class Quadrant {
 	
 	public static void main(String[] args){
 		
-	   Sacnner input = new Scanner(System.in);
+	   Scanner input = new Scanner(System.in);
 	   
 	   int x = input.nextInt();
 		int y = input.nextInt();
