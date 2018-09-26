@@ -24,6 +24,6 @@ public class helloworld {
 			System.out.println(3);
 		}
 
-	} // END main
+	} 
 
-} // END helloworld
+} 
