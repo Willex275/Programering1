@@ -17,7 +17,7 @@ public class FizzBuzz {
 				System.out.println("Fizzbuzz");
 				
 				
-			}
+			}  
 			else if (i % y == 0) {
 				System.out.println("Buzz");
 			}
