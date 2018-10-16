@@ -33,9 +33,32 @@ public class uppgift_v41_rovarspraket {
 	      case 'b':
 	      case 'b':
 	    	  mon += str.charAt(i) + "o" + str.charAt(i); 
-	      
+	    	  
 	      }
+switch (str.toLowerCase().charAt(i)) {
 	      
+	      case 'b':
+	      case '':
+	      case 'b':
+	      case 'b':
+	      case 'b':
+	      case 'b':
+	      case 'b':
+	      case 'b':
+	      case 'b':
+	      case 'b':
+	      case 'b':
+	      case 'b':
+	      case 'b':
+	      case 'b':
+	      case 'b':
+	      case 'b':
+	      case 'b':
+	      case 'b':
+	      case ' ':
+	    	  mon += str.charAt(i); 
+}
+
 		
 		return mon;
 	}
