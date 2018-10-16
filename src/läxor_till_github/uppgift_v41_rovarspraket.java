@@ -9,10 +9,35 @@ public class uppgift_v41_rovarspraket {
 		
 	}
 	public static String sjorovare(String str) {
-	      String sol = "";
+	      String mon = "";
+	      for(int i = 0; i < str.length(); i++)
+	      switch (str.toLowerCase().charAt(i)) {
+	      
+	      case 'b':
+	      case '':
+	      case 'b':
+	      case 'b':
+	      case 'b':
+	      case 'b':
+	      case 'b':
+	      case 'b':
+	      case 'b':
+	      case 'b':
+	      case 'b':
+	      case 'b':
+	      case 'b':
+	      case 'b':
+	      case 'b':
+	      case 'b':
+	      case 'b':
+	      case 'b':
+	      case 'b':
+	    	  mon += str.charAt(i) + "o" + str.charAt(i); 
+	      
+	      }
 	      
 		
-		return sol;
+		return mon;
 	}
 
 }
