@@ -9,8 +9,10 @@ public class uppgift_v41_rovarspraket {
 		
 	}
 	public static String sjorovare(String str) {
+	      String sol = "";
+	      
 		
-		
+		return sol;
 	}
 
 }
