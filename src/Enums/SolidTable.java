@@ -7,7 +7,7 @@ public enum SolidTable {
     GOLD(19.3, 0.13, 1064, 66),
     BLY(11.3, 0.13, 327, 24.7),
     SILVER(10.5, 0.24, 962, 105), 
-    
+   
     ;
 
 	double density;
