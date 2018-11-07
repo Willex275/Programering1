@@ -37,7 +37,7 @@ public class PhysicsLibrary {
 	// metod (3)
      public static double heat(FluidTable fluid, double volume, double deltaT) {
     	 
-    	 return volume * fluid.density *deltaT * fluid.heatCapacity;
+    	 return volume * deltaT * fluid.heatCapacity;
      }
      
      //  metod som gor om grader fahrenheit till grader celcius. metod (4)
@@ -118,6 +118,31 @@ public class PhysicsLibrary {
      public static double work(double force, double distance) {
     	
     	 return force*distance;
+     }
+     // raknar ut effekten genom att ta hjalp av arbete och tid. (17) 
+     public static double power(double work, double time) {
+    	 return work / time; 
+     }
+     // En metod som räknar ut hur mycket energi som
+     // krävs för att värma ett visst material ett angivet antal grader.(18)
+     public static double heat(SolidTable solid, double mass, double deltaT) {
+    	 return mass * deltaT * solid.heatCapacity; 
+     }
+     /**
+      * 
+      * @param gas (19) metod 
+      * @param volume
+      * @param deltaT
+      * @return hur mycket energi som går åt 
+      */
+     public static double heat(GasTable gas, double volume, double deltaT) { 
+    	 return volume * deltaT * gas.heatCapacity;
+     }
+     
+     public static double velocityToHeight(double velocity) {
+    	 
+    	 
+    	 return Math.pow (velocity,2)/(2*G);
      }
 }
 
