@@ -18,8 +18,10 @@ public class Method_Table {
 			height = height*0.99;
 			s++; }System.out.println(s);// metoden raknar ut hur manga ganger bollen hinner stutsa innan energi
 			//tar slut när Bollen minskar med 1% efter varje stuts mot marken
-		System.out.println(PhysicsLibrary.work(700*30, 100));// räknar arbete 	
-			
+		System.out.println(PhysicsLibrary.work(700*30, 100));// räknar arbete med hjälp av Massa*a Sträckan	
+		System.out.println((PhysicsLibrary.heat(SolidTable.ICE, 0.5,5)+2260*1E3*0.5) + "J");
+		
+		
 		
 			
 	}
