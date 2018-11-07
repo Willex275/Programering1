@@ -37,7 +37,7 @@ public class PhysicsLibrary {
 	// metod (3)
      public static double heat(FluidTable fluid, double volume, double deltaT) {
     	 
-    	 return volume * deltaT * fluid.heatCapacity;
+    	 return volume * deltaT * fluid.heatCapacity * fluid.density;
      }
      
      //  metod som gor om grader fahrenheit till grader celcius. metod (4)
@@ -140,8 +140,6 @@ public class PhysicsLibrary {
      }
      
      public static double velocityToHeight(double velocity) {
-    	 
-    	 
     	 return Math.pow (velocity,2)/(2*G);
      }
 }
