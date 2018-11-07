@@ -45,13 +45,26 @@ public class PhysicsLibrary {
     	 
     	 return (fahrenheit -32) / 1.8;
      }
-    
+     
+         // En metod som raknar ut vatsketrycket I en vatska vid ett vIsst dJup.
      public static double fluidPressure(FluidTable fluid, double deep) {
     	 
     	 return fluid.density * G * deep; 
      }
-	
-	
+	//En metod som raknar ut vatsketrycket i vatten vid ett visst djup.
+     public static double pressureUnderWater(double deep) {
+    	 return deep * G * 0.997 * 1E3;
+     }
+	// gor om grader kelvin till grader celcius 
+     public static double kelvinToCelsius(double kelvin) {
+    	 double celsius = kelvin + 273.15; 
+    	 return celsius; 
+     }
+     // En metod som raknar ut kinetisk energi med hjalp av massa och hastighet.
+     public static double kineticEnergy(double mass, double velocity) {
+    	 
+    	 return 0.5 * mass * velocity;
+     }
 }
 
      
