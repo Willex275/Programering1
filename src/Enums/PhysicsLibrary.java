@@ -142,6 +142,7 @@ public class PhysicsLibrary {
      public static double velocityToHeight(double velocity) {
     	 return Math.pow (velocity,2)/(2*G);
      }
+     
 }
 
      

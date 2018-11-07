@@ -12,7 +12,16 @@ public class Method_Table {
 		System.out.println(pressureUnderWater(100)); // svar 979054pa 
 		System.out.println(velocityToHeight(50/3.6)+1.8);
 		System.out.println(PhysicsLibrary.power(PhysicsLibrary.work(740, 100), 4.4));// uppgift 6
+        double height = 10;
+		int s = 0;
+		while(PhysicsLibrary.velocityToHeight(PhysicsLibrary.fallSpeed(height)) > 0.5) {
+			height = height*0.99;
+			s++; }System.out.println(s);// metoden raknar ut hur manga ganger bollen hinner stutsa innan energi
+			//tar slut när Bollen minskar med 1% efter varje stuts mot marken
+		System.out.println(PhysicsLibrary.work(700*30, 100));// räknar arbete 	
+			
 		
+			
 	}
 	
 	public static double volumeToMass(SolidTable solid, double volume) {
@@ -39,8 +48,12 @@ public class Method_Table {
 	
 	public static double velocityToHeight(double velocity) {
 		double height = Math.pow (velocity,2)/(2*G);
-		return height; 
+		return height;
 	}
+	
+	
+	
+	
 	
 
 	
