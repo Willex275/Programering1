@@ -11,6 +11,8 @@ public class Method_Table {
 		System.out.println(heat(FluidTable.WATER, 5, 1));
 		System.out.println(pressureUnderWater(100)); // svar 979054pa 
 		System.out.println(velocityToHeight(50/3.6)+1.8);
+		System.out.println(PhysicsLibrary.power(PhysicsLibrary.work(740, 100), 4.4));// uppgift 6
+		
 	}
 	
 	public static double volumeToMass(SolidTable solid, double volume) {
@@ -39,6 +41,8 @@ public class Method_Table {
 		double height = Math.pow (velocity,2)/(2*G);
 		return height; 
 	}
+	
+
 	
 	
 	
