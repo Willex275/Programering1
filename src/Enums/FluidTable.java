@@ -2,10 +2,13 @@ package Enums;
 
 public enum FluidTable {
 
-	H20(0.998, 4.19, 0, 100, 2260), 
+	ACETON(0.790, 2.20, -95, 56, 509), 
 	WATER(0.998, 4.19, 0, 100, 2260),
-	H2SO4(1.84, 1.38, 10, 336, 511)
+	H2SO4(1.84, 1.38, 10, 336, 511),
+	METANOL(0.791, 2.50, -98, 65, 1100),
+	BENSEN(0.879, 1.71, 6, 80, 393),
 	;
+	
 
 	double density;
 	double heatCapacity;
