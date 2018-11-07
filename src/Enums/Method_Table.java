@@ -20,7 +20,7 @@ public class Method_Table {
 			//tar slut när Bollen minskar med 1% efter varje stuts mot marken
 		System.out.println(PhysicsLibrary.work(700*30, 100));// räknar arbete med hjälp av Massa*a Sträckan	
 		System.out.println((PhysicsLibrary.heat(SolidTable.ICE, 0.5,5)+2260*1E3*0.5) + "J");
-		
+		System.out.println(PhysicsLibrary.fallSpeed(100) + " m/s");
 		
 		
 			
