@@ -33,11 +33,11 @@ public class PhysicsLibrary {
 		 
 	}
 	
-	//En metod som raknar ut hur mycket energi som gor at for att varme upp x volym vatska till y Grader 
+	//En metod som raknar ut hur mycket energi som gor att for att varme upp x volym vatska till y Grader 
 	// metod (3)
      public static double heat(FluidTable fluid, double volume, double deltaT) {
     	 
-    	 return volume*deltaT;
+    	 return volume * fluid.density *deltaT * fluid.heatCapacity;
      }
      
      //  metod som gor om grader fahrenheit till grader celcius. metod (4)
@@ -86,8 +86,39 @@ public class PhysicsLibrary {
     	 
     	 return volume * gas.density;
      }
+     // en metod som gor att får fram en massa av en volym av en vätska.(13) 
+     public static double volumeToMass(FluidTable fluid, double volume) {
+    	  return volume * fluid.density;
+     }
+     // en metod som tar fram medelhastigheten av stracka och tid. (14)
+     public static double svtVelocity(double distance, double time) {
+    	 
+    	 return distance/time;
+     }
+    //En metod som raknar ut tid for hjalp av stracka och hastighet.(15)
      
-    
+     /**
+      * 
+      * @param distance
+      * @param velocity
+      * @return hur långt tid det det tar att åka 
+      */
+     public static double svtTime(double distance, double velocity) {
+    	 
+    	 return distance / velocity; 
+     }
+     // raknar ut arbete med hjälp av kraft och även stracka.(16)
+     /**
+      * 
+      * @param force
+      * @param distance
+      * @return work 
+      */
+     
+     public static double work(double force, double distance) {
+    	
+    	 return force*distance;
+     }
 }
 
      
