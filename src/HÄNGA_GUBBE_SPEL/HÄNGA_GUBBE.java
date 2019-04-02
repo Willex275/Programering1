@@ -7,10 +7,15 @@ public class HÄNGA_GUBBE {
 
 		Scanner input = new Scanner(System.in);
 
+		System.out.println("Hej skirv in valfritt ord!");
+		
 		// DATA TYP SOM ANVÄNDS
 		String word = input.next();
 
+		
 		String show = "";
+		
+		
 
 		// EN LOOP SOM GÖR OM ORDET MED BOKSTÄVER TILL STRECK
 		for (int i = 0; i < word.length(); i++) {
@@ -32,7 +37,7 @@ public class HÄNGA_GUBBE {
 			
 			// testar om man har gissat rätt på ordet 
 			if (show.equals(word)) {
-				System.out.println("Du vann!!");
+				System.out.println("Du vann! ");
 				break;
 			}
 			// tar in en string och sparar första bokstaven i den
@@ -68,7 +73,7 @@ public class HÄNGA_GUBBE {
 			
 			//Om vi inte har några  liv kvar skriv ut Du förlorade( Loopen avslutar sig själv)
 			if (lives == 0) {
-				System.out.println("Du förlorade");
+				System.out.println("GUBBEN ÄR HÄNGD");
 			}
 			
 		}
